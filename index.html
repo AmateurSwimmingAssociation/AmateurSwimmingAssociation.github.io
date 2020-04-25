@@ -40,31 +40,47 @@
     <!-- JSON-LD conforming to Google Structured Data specification. -->
     <script type="application/ld+json">
     {
-      "@context" : "http://schema.org",
-      "@type" : "Dataset",
-      "name" : "Who Dares Swims",
-      "id": "https://amateurswimmingassociation.github.io/",
+      "@context": [
+        "https://schema.org/",
+        "https://openactive.io/"
+      ],
+      "@type": "Dataset",
+      "@id": "https://amateurswimmingassociation.github.io/",
       "url": "https://amateurswimmingassociation.github.io/",
-      "description" : "Get your goggles on!; published using OpenActive RPDE v0.2.3.",
+      "name": "Who Dares Swims",
+      "description": "Get your goggles on!; published using OpenActive RPDE v0.2.3.",
       "keywords":[
-         "Swimming",
-         "Challenge",
-         "OpenActive"
+          "Swimming",
+          "Challenge",
+          "OpenActive"
       ],
       "license" : "https://creativecommons.org/licenses/by/4.0/",
-      "distribution" : {
-        "@type" : "DataDownload",
-        "encodingFormat" : "application/vnd.openactive.rpde+json; version=0.2.3",
-        "contentUrl" : "http://api.britishcycling.com/openactive/rpde"
-      },
-      "inLanguage": "en-GB",
+      "distribution": [
+        {
+          "@type" : "DataDownload",
+          "encodingFormat" : "application/vnd.openactive.rpde+json; version={rpdeversion}",
+          "contentUrl" : "http://api.britishcycling.com/openactive/rpde"
+        }
+      ],
+      "discussionUrl": "https://github.com/britishcycling-oa/opendata/issues",
+      "documentation": "https://github.com/britishcycling-oa/opendata",
+      "inLanguage": [
+        "en-GB"
+      ],
       "publisher": {
-         "@type": "Organization", 
-         "name": "AmateurSwimmingAssociation",
-         "url": "www.swimming.org",
-         "logo": "https://amateurswimmingassociation.github.io/images/logo.png"
+        "@type": "Organization",
+        "name": "AmateurSwimmingAssociation",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://amateurswimmingassociation.github.io/images/logo.png"
+        },
+        "url": "www.swimming.org"
       },
-      "datePublished" : "2014-07-20T00:00:00.000Z"
+      "datePublished": "2014-07-20T00:00:00.000Z",
+      "backgroundImage": {
+        "@type": "ImageObject",
+        "url": "https://amateurswimmingassociation.github.io/images/bg.jpg"
+      }
     }
     </script>
   </head>
